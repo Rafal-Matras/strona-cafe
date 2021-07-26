@@ -1,0 +1,124 @@
+.menu {
+  margin-top: 14px;
+
+  &__h2 {
+    margin-top: 40px;
+    color: $text-dark-color;
+  }
+
+  &__box-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+
+    .menu__box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 38vw;
+      height: 44vw;
+      margin-bottom: 10px;
+      background-color: $text-light-color;
+      box-shadow: 0 0 4px 4px $shadow-color;
+
+      .menu__image {
+        padding-top: 6px;
+        width: 34vw;
+        height: 34vw;
+        object-fit: cover;
+      }
+
+      .menu__text {
+        margin-top: 8px;
+        font-size: 1.6rem;
+        text-align: center;
+        color: $text-dark-color;
+      }
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .menu {
+    &__box-container {
+      width: 90%;
+
+      .menu__box {
+        width: 32vw;
+        height: 34vw;
+
+        .menu__image {
+          padding-top: 18px;
+          width: 28vw;
+          height: 28vw;
+        }
+
+        .menu__text {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:992px) {
+  .menu {
+    &__box-container {
+      height: 75%;
+
+      .menu__box {
+        width: 25vw;
+        height: 28vw;
+        margin-bottom: 30px;
+        opacity: .7;
+        transition: opacity .5s;
+
+        .menu__image {
+          width: 22vw;
+          height: 22vw;
+          transition: transform .5s;
+        }
+
+        .menu__text {
+          font-size: 3rem;
+          transition: transform .5s, font-size .5s;
+        }
+      }
+
+      .menu__box:hover {
+        opacity: 1;
+
+        .menu__image {
+          transform: scale(1.14);
+        }
+
+        .menu__text {
+          font-size: 3.4rem;
+          transform: translateY(10px)
+        }
+      }
+    }
+  }
+}
+
+@media (min-width:1400px) {
+  .menu {
+    &__box-container {
+
+      .menu__box {
+        width: 350px;
+        height: 390px;
+
+        .menu__image {
+          width: 310px;
+          height: 310px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+.footer {
+  height: 5vh;
+  background-color: $span-color;
+
+  &__text {
+    padding-top: 1vh;
+    width: 100%;
+    align-items: center;
+  }
+}

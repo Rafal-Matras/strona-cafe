@@ -1,0 +1,241 @@
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  transition: background .4s, height .4s;
+  z-index: 100;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+    .header__logo-text {
+      margin: .1rem 0 0 1.4rem;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .header__logo-span {
+      font-size: 2.6rem;
+    }
+  }
+
+  &__nav {
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: $text-light-color;
+    transition: right .4s linear;
+
+    .header__list-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      height: 60%;
+      margin-top: 20%;
+      list-style: none;
+
+      .header__item-link {
+        font-size: 2.6rem;
+        font-weight: 500;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        color: $text-dark-color;
+      }
+    }
+  }
+
+  &__nav.active {
+    right: 0;
+  }
+
+  &__hamburger {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    display: block;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: top .4s;
+
+    .header__hamburger-line {
+      position: absolute;
+      top: 19px;
+      right: 5px;
+      width: 30px;
+      height: 2px;
+      background-color: $text-light-color;
+      transition: width 0s .2s linear,
+        background-color .4s linear;
+    }
+
+    .header__hamburger-line::before,
+    .header__hamburger-line::after {
+      content: '';
+      position: absolute;
+      top: -8px;
+      right: 0;
+      display: block;
+      width: 30px;
+      height: 2px;
+      background-color: $text-light-color;
+      transition: transform .2s linear,
+        top .2s .2s linear,
+        background-color .4s linear;
+    }
+
+    .header__hamburger-line::after {
+      top: 8px;
+    }
+  }
+
+  .header__hamburger.active {
+    .header__hamburger-line {
+      width: 0;
+      background-color: $text-dark-color;
+    }
+
+    .header__hamburger-line::after {
+      top: 0;
+      transform: rotate(45deg);
+      background-color: $text-dark-color;
+      transition: top .2s linear,
+        transform .2s .2s linear,
+        background-color .4s linear;
+    }
+
+    .header__hamburger-line::before {
+      top: 0;
+      transform: rotate(-45deg);
+      background-color: $text-dark-color;
+      transition: top .2s linear,
+        transform .2s .2s linear,
+        background-color .4s linear;
+    }
+  }
+}
+
+.header.active {
+  height: 50px;
+  background: $text-light-color;
+  box-shadow: -4px -4px 20px 0px $text-dark-color;
+
+  .header__logo-text {
+    color: $text-dark-color;
+    text-shadow: none;
+  }
+
+  .header__hamburger {
+    top: 5px;
+
+    .header__hamburger-line,
+    .header__hamburger-line::before,
+    .header__hamburger-line::after {
+      background-color: $text-dark-color;
+    }
+  }
+}
+
+@media (min-width:768px) {
+  .header {
+    height: 8rem;
+
+    &__logo {
+      .header__logo-text {
+        font-size: 2.2rem;
+      }
+
+      .header__logo-span {
+        font-size: 3rem;
+      }
+    }
+
+    &__nav {
+      position: static;
+      margin-right: 2%;
+      display: flex;
+      align-items: center;
+      width: 70%;
+      height: 100%;
+      background-color: transparent;
+
+      .header__list-item {
+        flex-direction: row;
+        margin-top: 0;
+
+        .header__item-link {
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: $text-light-color;
+          text-shadow: 0 0 10px $text-dark-color;
+        }
+
+        .header__item-link:hover {
+          color: $span-color;
+        }
+      }
+    }
+
+    &__hamburger {
+      display: none;
+    }
+  }
+
+  .header.active {
+    height: 6rem;
+
+    .header__logo {
+      .header__logo-text {
+        margin: 0 0 0 1.2rem;
+      }
+    }
+
+    .header__item-link {
+      color: $text-dark-color;
+      text-shadow: none;
+    }
+
+  }
+}
+
+@media (min-width:992px) {
+  .header {
+    max-width: 1440px;
+    height: 10rem;
+
+    &__logo {
+      .header__logo-text {
+        font-size: 2.6rem;
+      }
+
+      .header__logo-span {
+        font-size: 3.4rem;
+      }
+    }
+
+    &__nav {
+
+      .header__list-item {
+
+        .header__item-link {
+          font-size: 2.2rem;
+        }
+      }
+    }
+  }
+
+  .header.active {
+    height: 8rem;
+  }
+}

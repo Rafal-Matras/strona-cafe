@@ -1,0 +1,25 @@
+$text-dark-color: rgb(24, 24, 24);
+$text-light-color: rgb(255, 250, 250);
+$span-color:rgb(255, 68, 139);
+$shadow-color:rgb(240, 240, 240);
+
+
+
+@mixin galery-left-right-close {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: $text-light-color;
+  text-shadow: 0 0 3px $text-dark-color;
+  cursor: pointer;
+}
+
+@mixin galery-left-right {
+  left: 2%;
+  width: 5%;
+  height: 100%;
+}

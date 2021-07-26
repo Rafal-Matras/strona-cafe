@@ -1,0 +1,45 @@
+.home {
+  background-image: url('../img/bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+    .home__btn-menu {
+      margin-top: 3rem;
+      padding: 10px 15px;
+      border: 2px solid $span-color;
+      border-radius: 5px;
+      background-color: $span-color;
+      font-size: 1em;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background-color .6s;
+
+      .home__btn-link {
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-decoration: none;
+        letter-spacing: .2rem;
+        color: $text-light-color;
+        transition: color .6s;
+      }
+    }
+
+    .home__btn-menu:hover {
+      background-color: $text-light-color;
+
+      .home__btn-link {
+        color: $span-color
+      }
+    }
+  }
+
+}

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    </script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header" data-header>
+            <div class="header__logo">
+                <p class="header__logo-text">
+                    <span class="header__logo-span">D</span>obre<span class="header__logo-span">S</span>maki
+                </p>
+            </div>
+            <nav class="header__nav" data-header__nav>
+                <ul class="header__list-item">
+                    <li class="header__item">
+                        <a class="header__item-link" href="#home" data-link>start</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__item-link" href="#about" data-link>o nas</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__item-link" href="#menu" data-link>menu</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__item-link" href="#galery" data-link>galeria</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__item-link" href="#opinions" data-link>opinie</a>
+                    </li>
+                    <li class="header__item">
+                        <a class="header__item-link" href="#contact" data-link>kontakt</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__hamburger" data-hamburger>
+                <div class="header__hamburger-line"></div>
+            </div>
+        </header>
+        <section id="home" class="home">
+            <div class="filter"></div>
+            <div class="home__container">
+                <h2>U Nas Znajdziesz Coś Dla Siebie</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quos esse
+                    dolorum inventore.
+                    Perspiciatis aperiam quasi quae eligendi corporis laborum ipsa, reprehenderit sapiente voluptatem
+                    autem!
+                </p>
+                <button class="home__btn-menu">
+                    <a class="home__btn-link" href="#menu">nasze menu</a>
+                </button>
+            </div>
+        </section>
+        <section id="about" class="about">
+            <div class="about__left">
+                <h2 class="about__h2">O <span class="about__span">N</span>as</h2>
+                <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur saepe nobis
+                    pariatur nam vero non
+                    iure optio, dolore doloribus eos nulla autem temporibus. Laudantium ipsam aperiam eligendi inventore
+                    officiis quam quod autem expedita error nesciunt aliquid ut.</p>
+                <p class="about__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam nemo delectus
+                    ducimus? Quos,
+                    animi voluptates dolorum inventore debitis consequuntur iste qui blanditiis? Molestiae, iste.</p>
+            </div>
+            <div class="about__right">
+                <div class="about__image"></div>
+            </div>
+        </section>
+        <section id="menu" class="menu">
+            <h2 class="menu__h2">Nasze <span>M</span>enu</h2>
+            <div class="menu__box-container">
+                <div class="menu__box">
+                    <img class="menu__image" src="./img/galery/image1.jpg" alt="">
+                    <p class="menu__text">kawy</p>
+                </div>
+                <div class="menu__box">
+                    <img class="menu__image" src="./img/galery/image6.jpg" alt="">
+                    <p class="menu__text">ciastka</p>
+                </div>
+                <div class="menu__box">
+                    <img class="menu__image" src="./img/galery/image9.jpg" alt="">
+                    <p class="menu__text">lody</p>
+                </div>
+                <div class="menu__box">
+                    <img class="menu__image" src="./img/galery/image14.jpg" alt="">
+                    <p class="menu__text">smoothie</p>
+                </div>
+                <div class="menu__box">
+                    <img class="menu__image" src="./img/galery/image20.jpg" alt="">
+                    <p class="menu__text">torty</p>
+                </div>
+                <div class="menu__box">
+                    <img class="menu__image" src="./img/galery/image24.jpg" alt="">
+                    <p class="menu__text">herbaty</p>
+                </div>
+            </div>
+        </section>
+        <section id="galery" class="galery">
+            <h2 class="galery__h2"><span>G</span>aleria</h2>
+            <div class="galery__box-container">
+                <div class="galery__box" data-galery-products>
+                    <img class="galery__box-image" src="./img/galery/image18.jpg" alt="">
+                    <p class="galery__box-text">nasze produkty</p>
+                </div>
+                <div class="galery__box" data-galery-meetings>
+                    <img class="galery__box-image" src="./img/galery/spotkania3.jpg" alt="">
+                    <p class="galery__box-text">nasze spotkania</p>
+                </div>
+            </div>
+            <div class="galery__image-container disable" data-galery-container>
+                <div class="galery__image-box">
+                    <img class="galery__image-image" src="./img/galery/image1.jpg" alt="galery" data-galery-img>
+                    <div class="galery__image-left" data-left>&#10094;</div>
+                    <div class="galery__image-right" data-right>&#10095;</div>
+                    <div class="galery__image-close" data-close>&#10005;</div>
+                </div>
+            </div>
+        </section>
+        <section id="opinions" class="opinions">
+            <div class="filter"></div>
+            <div class="opinions__container">
+                <h2 class="opinions__h2">Co O <span>N</span>as Piszą</h2>
+                <div class="opinions__box-container">
+                    <div class="opinions__box" data-opinions-box>
+                        <div class="opinions__persone-image" data-persone-img></div>
+                        <h3 class="opinions__persone-name" data-persone-name></h3>
+                        <div class="opinions__persone-opinion">
+                            <p class="opinions__persone-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Aliquid blanditiis earum
+                                recusandae
+                                saepe sit culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae non
+                                perspiciatis est aperiam, saepe quisquam voluptates doloribus?
+                            </p>
+                        </div>
+                        <div class="opinions__more" data-option-text>czytaj dalej</div>
+                    </div>
+                    <div class="opinions__box" data-opinions-box>
+                        <div class="opinions__persone-image" data-persone-img></div>
+                        <h3 class="opinions__persone-name" data-persone-name></h3>
+                        <div class="opinions__persone-opinion">
+                            <p class="opinions__persone-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Temporibus sequi placeat
+                                laudantium
+                                quae optio similique qui omnis quam error totam impedit architecto hic, commodi
+                                cupiditate.
+                            </p>
+                        </div>
+                        <div class="opinions__more" data-option-text>czytaj dalej</div>
+                    </div>
+                    <div class="opinions__box" data-opinions-box>
+                        <div class="opinions__persone-image" data-persone-img></div>
+                        <h3 class="opinions__persone-name" data-persone-name></h3>
+                        <div class="opinions__persone-opinion">
+                            <p class="opinions__persone-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Eaque ducimus rerum, sed tenetur
+                                officia at voluptate, expedita et, esse labore quo quis aspernatur voluptas laborum quod
+                                repellat. Dolores minus sed doloremque libero maxime labore, perspiciatis consequuntur
+                                similique eveniet.
+                            </p>
+                        </div>
+                        <div class="opinions__more" data-option-text>czytaj dalej</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="contact__h2"><span>N</span>apisz do Nas</h2>
+            <div class="contact__container">
+                <div class="contact__left">
+                    <form class="contact__box" action="https://formsubmit.co/rafimx@gmail.com" method="POST">
+                        <input class="contact__input-text" type="text" placeholder="Imię" name="name" required>
+                        <input class="contact__input-text" type="email" placeholder="Email" name="email" required>
+                        <textarea class="contact__textarea" cols="30" rows="4" placeholder="Wiadomość" name="message"
+                            required></textarea>
+                        <button class="contact__input-button" type="submit">wyślij</button>
+                        <input type="hidden" name="_subject" value="New submission!">
+                    </form>
+                </div>
+                <div class="contact__right"></div>
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__text">Copyright &#169; 2021 </p>
+        </footer>
+    </div>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
